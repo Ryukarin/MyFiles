@@ -8,6 +8,7 @@
 #Date: 2020-02-10
 
 #you can only scan one character at a time
+#下面路径的Username为你自己的家目录
 
 SCR="/home/Username/Documents/temp"
 
