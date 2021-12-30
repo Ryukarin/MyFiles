@@ -1,4 +1,7 @@
+# Ubuntu进行OCR图片文字识别
+
 ## 安装tesseract
+
 ```shell
 # 安装tesseract
 sudo apt install tesseract-ocr

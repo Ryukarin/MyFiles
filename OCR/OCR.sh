@@ -25,4 +25,7 @@ tesseract $SCR.png $SCR &> /dev/null -l eng+chi1
 ####get the text and copy to clipboard
 cat $SCR.txt | xclip -selection clipboard
 
+####打开识别后的文本文件，不需要则注销即可
+gedit $SCR.txt
+
 exit
