@@ -11,7 +11,7 @@ ubuntu安装WPS后打开出现字体缺失问题。
 ### 下载缺失字体
 
 ```shell
-wget 
+wget https://github.com/Ryukarin/MyFiles/raw/main/WPS/wps_fonts.zip
 ```
 ### 解压字体
 
@@ -29,7 +29,7 @@ sudo cp -r ./wps_fonts /usr/share/fonts
 
 ```shell
 cd /usr/share/fonts
-sudo chmod 755 wps_fonts
+sudo chmod 755 wps_fonts/
 cd wps_fonts
 sudo chmod 644 *
 ```
