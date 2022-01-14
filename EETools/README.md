@@ -1,5 +1,3 @@
-# EETools
-
 ## 介绍
 
 此目录有两个脚本，分贝是对 EmuELEC 的核心系统文件 `kernel.img`、`SYSTEM` 的修改脚本。
