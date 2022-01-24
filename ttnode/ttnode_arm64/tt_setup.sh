@@ -27,7 +27,7 @@ mount -a
 
 echo "配置甜糖星愿..."
 cd /usr
-wget https://github.com/Ryukarin/MyFiles/raw/main/ttnode/ttnode_arm32/node.tar.gz
+wget https://github.com/Ryukarin/MyFiles/raw/main/ttnode/ttnode_arm64/node.tar.gz
 tar -xvf node.tar.gz
 rm -rf node.tar.gz
 chmod 777 /usr/node/*
