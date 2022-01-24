@@ -27,10 +27,12 @@ mount -a
 
 echo "配置甜糖星愿..."
 cd /usr
-#if判断32 还是64
-#cat /proc/version
-
-wget https://github.com/Ryukarin/MyFiles/raw/main/ttnode/ttnode_arm32/node.tar.gz
+SYSTEM_BIT=`getconf LONG_BIT`
+if [ $SYSTEM_BIT == 32 ];then
+    wget https://raw.githubusercontent.com/Ryukarin/MyFiles/main/ttnode/ttnode_arm32/node.tar.gz
+else
+    wget https://raw.githubusercontent.com/Ryukarin/MyFiles/main/ttnode/ttnode_arm64/node.tar.gz
+fi
 tar -xvf node.tar.gz
 rm -rf node.tar.gz
 chmod 777 /usr/node/*
