@@ -2,7 +2,7 @@
 
 echo "更改为国内源..."
 mv /etc/apt/sources.list /etc/apt/sources.list.bak
-wget -O /etc/apt/sources.list $URL
+wget -O /etc/apt/sources.list https://raw.githubusercontent.com/Ryukarin/MyFiles/main/ttnode/sources.list
 
 echo "更新软件包..."
 apt install -y wget ca-certificates qrencode unzip tar >/dev/null 2>&1
@@ -28,7 +28,10 @@ mount -a
 echo "配置甜糖星愿..."
 mkdir /usr/node
 cd /usr/node
-wget 
+wget https://raw.githubusercontent.com/Ryukarin/MyFiles/main/ttnode/ttnode_arm32/crash_monitor.sh
+wget https://raw.githubusercontent.com/Ryukarin/MyFiles/main/ttnode/ttnode_arm32/tt.log
+wget https://github.com/Ryukarin/MyFiles/raw/main/ttnode/ttnode_arm32/ttnode
+wget https://raw.githubusercontent.com/Ryukarin/MyFiles/main/ttnode/ttnode_arm32/yfapp.conf
 chmod 777 /usr/node/*
 #启动甜糖星愿
 /usr/node/ttnode -p $DISK_DIR
