@@ -12,8 +12,6 @@ DT2=`stat /storage/.config/emuelec/configs/locale/zh_CN/LC_MESSAGES/emulationsta
 DT3=`stat /usr/bin/scripts/setup/gamelist.xml |awk 'NR==6{print $0}'|sed -r 's/[^0-9.]+//g'|cut -b 1-12,15-17`
 
 
-/storage/.config/emuelec/configs/locale/zh_CN/LC_MESSAGES/emulationstation2.po
-
 menu(){
     clear
     echo -e "\n                    \033[42;37m EESet_v4.x \033[0m"
