@@ -22,7 +22,11 @@ mogrify -modulate 100,0 -resize 400% $SCR.png
 ####OCR by tesseract
 tesseract $SCR.png $SCR &> /dev/null -l eng+chi1
 
-####get the text and copy to clipboard
+####去除识别内容的空格、最后一行
+sed -i 's/ //g' $SCR.txt
+sed -i '$d' $SCR.txt
+
+####识别内容复制到剪切板
 cat $SCR.txt | xclip -selection clipboard
 
 ####打开识别后的文本文件，不需要则注销即可
