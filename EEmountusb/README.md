@@ -9,7 +9,8 @@
 首先把你的USB存储设备的标卷改名为EEROMS，然后下载此脚本执行。
 
 ```shell
-wget 
-sh ee_mountusb.sh
+wget https://raw.githubusercontent.com/Ryukarin/MyFiles/main/EEmountusb/ee_mountusb.sh
+chmod +x ee_mountusb.sh
+./ee_mountusb.sh
 ```
 
