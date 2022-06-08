@@ -18,6 +18,6 @@ esac
 
 mount -o remount,ro /flash
 
-sh /usr/bin/mount_romfs.sh
+sh /usr/bin/mount_romfs.sh > /dev/null 2>&1
 
 echo "Please Restart EmulationStation!"
